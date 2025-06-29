@@ -879,20 +879,29 @@ footer .bottom_footer .payment_img {
     width: 30%;
   }
 
-  /* تعديل footer عند 1000px */
-  .footer .index-row {
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .container .big_row {
     width: 40%;
+    margin-bottom: 20px;
+  }
+  footer .container .row {
+    width: 30%;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 800px) {
-  .footer .index-row {
+  footer .container .big_row {
     width: 50%;
     margin-bottom: 30px;
   }
-
-  .footer .bottom_footer .container {
+  footer .container .row {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  footer .bottom_footer .container {
     flex-direction: column;
     gap: 10px;
   }
@@ -915,9 +924,11 @@ footer .bottom_footer .payment_img {
     font-size: 11px;
   }
 
-  .footer .index-row {
+  footer .container .row {
     width: 100%;
-    margin-bottom: 20px;
+  }
+  footer .container .big_row {
+    width: 100%;
   }
 }
 /* end responsive */
